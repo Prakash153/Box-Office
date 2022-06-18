@@ -1,26 +1,23 @@
 import React from 'react';
 // eslint-disable-next-line import/no-unresolved
 import { Switch, Route } from 'react-router-dom';
-import Navs from './components/Navs';
+
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 
 function App() {
   return (
-    <div>
-      <Navs />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-        <Route exact path="/starred">
-          <Starred />
-        </Route>
+      <Route exact path="/starred">
+        <Starred />
+      </Route>
 
-        <Route> Page Not Found </Route>
-      </Switch>
-    </div>
+      <Route> Page Not Found </Route>
+    </Switch>
   );
 }
 
