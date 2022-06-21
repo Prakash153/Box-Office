@@ -19,6 +19,7 @@
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "react/jsx-no-constructed-context-values": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }
